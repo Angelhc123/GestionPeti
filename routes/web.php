@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 // Mostrar login en la raíz del sitio
@@ -65,6 +66,9 @@ Route::get('/las-5-fuerzas', function () {
     return view('las_5_fuerzas'); // Vista de la página LAS 5 FUERZAS DE PORTER
 })->name('las_5_fuerzas');
 
+Route::get('/mision', [PageController::class, 'mision'])->name('mision');
+Route::get('/vision', [PageController::class, 'vision'])->name('vision');
+Route::get('/panel', [PageController::class, 'panel'])->name('panel');
 // Perfil
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

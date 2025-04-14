@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/* Estilos personalizados */
+.panel-inferior-izquierdo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999; /* Asegura que se quede encima de otros elementos */
+    background-color: #fff; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.vision-inferior-derecho {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Asegura que se quede encima de otros elementos */
+    background-color: #fff; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
