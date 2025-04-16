@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- Volcando datos para la tabla gestion_login.users: ~1 rows (aproximadamente)
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`) VALUES
-	(5, 'Administrador', 'admin@peti.com', '$2y$12$C680abLVgyqrnpTS0juqROz7Uq9Y/9PGB5eV06UTvxqagYa8k5YOS', '2025-04-14 07:49:40');
+	(1, 'Administrador', 'admin@peti.com', '$2y$12$C680abLVgyqrnpTS0juqROz7Uq9Y/9PGB5eV06UTvxqagYa8k5YOS', '2025-04-14 07:49:40');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
